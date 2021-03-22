@@ -1,0 +1,56 @@
+{
+    "coin": "Ethereum",
+    "symbol": "ETH",
+    "coinUnits": "ether",
+    "coinDifficulty": 1073741824,
+    "nonceSize": 4,    
+    "upstream": "",
+    "stratumServer": {
+        "enabled": false,
+        "solo": false,
+        "poolAddress": "0x0",
+        "clusterForks": "auto",
+        "blockRefreshInterval": 1000,
+        "minerTimeout": 900,
+        "maxBackLog": 8,
+        "cpu": 2,
+        "ports": [
+            {
+                "port": 2222,
+                "difficulty": 1,
+                "desc": "Low end GPU"
+            },
+            {
+                "port": 3333,
+                "difficulty": 4,
+                "desc": "Mid end GPU"
+            },
+            {
+                "port": 4444,
+                "difficulty": 4,
+                "solo": true,
+                "desc": "Mid end GPU"
+            },
+            {
+                "port": 5555,
+                "difficulty": 8,
+                "nicehash": true,
+                "solo": true,
+                "desc": "Nicehash or Farm"
+            }
+        ]
+    },
+    "socket": {
+        "host": "127.0.0.1",
+        "port": 3000
+    },
+    "mongoose": {
+        "url": "",
+        "options": {
+            "useCreateIndex": true,
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true,
+            "useFindAndModify": false
+        }
+    }
+}
