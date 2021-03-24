@@ -22,7 +22,7 @@
             },
             {
                 "port": 3333,
-                "difficulty": 4,
+                "difficulty": 2,
                 "desc": "Mid end GPU"
             },
             {
